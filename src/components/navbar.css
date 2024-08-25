@@ -1,0 +1,9 @@
+.submenu {
+  display: none;
+  background-color: pink;
+  padding: 4px 6px;
+}
+
+.item:hover .submenu {
+  display: flex;
+}
