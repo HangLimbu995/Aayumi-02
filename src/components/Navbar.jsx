@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className='w-full h-[8vh] bg-red-900 grid place-items-center'>
             <div className='w-[90%] md:w-[80%] h-full flex justify-between items-center'>
-                <div style={{ zIndex: 9 }}>
+                <div style={{ zIndex: 10 }}>
                     <h1 className='text-3xl font-bold' >logo</h1>
                 </div>
                 <div className='flex gap-9'>
@@ -27,14 +27,14 @@ const Navbar = () => {
                         <li>About</li>
                         <li>Contact</li>
                     </ul>
-                    <button onClick={() => setSlideMenu(!slideMenu)} className='flex md:hidden' style={{ zIndex: 9 }}>
+                    <button onClick={() => setSlideMenu(!slideMenu)} className='flex md:hidden' style={{ zIndex: 10 }}>
                         {
                             !slideMenu ? <FaBars size={33} /> : <FaTimes size={33} />
                         }
                     </button>
                 </div>
                 {slideMenu ? (
-                    <div className='slide-menu fixed top-0 left-0 w-full h-[100vh] bg-red-900'>
+                    <div className='slide-menu fixed top-0 left-0 w-full h-[100vh] bg-red-900' style={{zIndex:9}}>
                         <div className=' w-full h-full  mt-[50px] p-6'>
                             <div className='w-full h-full '>
                                 <ul className=' text-[26px] flex flex-col gap-5'>
