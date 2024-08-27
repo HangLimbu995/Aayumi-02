@@ -20,3 +20,17 @@ li {
   cursor: pointer;
 }
 
+
+.service-img {
+  background-image: var(--primary-img);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem; /* To match the rounded-xl class */
+  -webkit-transition: background-image 0.3s ease-in-out;
+  -o-transition: background-image 0.3s ease-in-out;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.service-img:hover {
+  background-image: var(--hover-img);
+}

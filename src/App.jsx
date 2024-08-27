@@ -3,13 +3,16 @@ import './App.css'
 import TextSliderAnimation from './components/TextSliderAnimation'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
+import { Outlet } from 'react-router'
 
 function App() {
 
   return (
     <div className='w-full '>
     <Navbar />
-    <Home />
+    <div className='relative w-full h-full'>
+    <Outlet />
+    </div>
 
     </div>
   )

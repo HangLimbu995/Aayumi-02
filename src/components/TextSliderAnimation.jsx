@@ -24,7 +24,7 @@ const TextSliderAnimation = () => {
           <h1>build design</h1>
         </li>
       </ul>
-      <ul class='alt'>
+      <ul className='alt'>
         <li>
           <h1>pre construction</h1>
         </li>
